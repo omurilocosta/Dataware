@@ -1,0 +1,104 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(249, 249, 249);
+}
+
+.CONTEUDO{
+    width: 100%;
+    height: 100%;
+    padding: 0 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* LOGIN AREA */
+
+.BLOCO-LOGIN {
+    display: flex;
+    width: 850px;
+    height: 500px;
+    border-radius: 15px;
+    background-color: white;
+    box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.2);
+
+    & .LEFT-BLOCO-LOGIN {
+        width: 30%;
+        background-color: blueviolet;
+
+        display: flex;
+        align-items: center;
+        justify-content: end;
+    }
+
+    & .RIGHT-BLOCO-LOGIN {
+        width: 70%;
+        padding: 20px 70px;
+
+        & .R-B_L-1 {
+            height: 55%;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            & .R-B_L-IMG {
+                width: 200px;
+                height:200px;
+                background-color: black;
+            }
+        }
+
+        & .R-B_L-2 {
+            height: 30%;
+            .R-B_L-INPUTS {
+                & input {
+                    width: 100%;
+                    height: 40px;
+                }
+            }
+        }
+
+        & .R-B_L-3 {
+            height: 15%;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+
+            & span a {
+                color: blueviolet;
+                
+            }
+            & :hover {
+                color: rgb(150, 70, 225);
+            }
+
+            & .R-B_L-BUTTON {
+                & button{
+                    width: 100px;
+                    height: 45px;
+                    border:  none;
+                    border-radius: 25px;
+                    font-size: 14px;
+                    background: blueviolet;
+                    color: white;
+                
+                }
+                & button:hover {
+                    cursor: pointer;
+                    background: rgb(106, 33, 173);
+                    transition: all ease-in .2s;
+                }
+            }
+        }
+    }
+}
+
+/* LOGIN AREA */
