@@ -5,67 +5,68 @@
     margin: 0;
     box-sizing: border-box;
     font-family: 'League Spartan', sans-serif;
+    list-style: none;
 }
 
 body {
-    background: url('img/back.png') #e7f6ff;
+    background: #e7f6ff;
     width: 100vw;
     height: 100vh;
-    padding: 100px;
+    padding: 15px;
 }
 
+/* LOGIN */
+.pg-login {
+    background: url('img/back.png') ;
+    padding: 100px;
+}
 .content {
     width: 100%;
     height: 100%;  
     
 }
-
 .header-page-login{
     width: 24%;
     height: 68px;
     border-bottom: 3px solid white;
 }
-
 .header-page-login h2 {
     color: white;
     font-size: 50px;
     letter-spacing: -2px;
 }
-
 .content {
     display: flex;
     justify-content: end;
     padding: 25px;
 }
-
-.content .container-login {
-    width: 400px;
-    height: 500px;
+.container-login {
+    width: 350px;
+    height: 380px;
     border: 2px solid #015a83;
     border-radius: 15px;
     background-color: #fff;
     padding: 20px 50px
 }
-
 .C_L-Header {
     width: 100%;
-    height: 20%;
-    font-size: 34px;
-    background-color: aqua;
+    height: 25%;
+    font-size: 30px;
     text-align: center;
+    color: #015a83;
 }
 .C_L-Inputs {
     width: 100%;
-    height: 55%;
-    background-color: yellowgreen;
+    height: 50%;
 }
 .C_L-Inputs label {
-    font-size: 25px;
+    font-size: 17px;
+    color: #015a83;
 }
 .C_L-Inputs input {
     width: 100%;
-    height: 50px;
-    margin-bottom: 25px;
+    height: 46px;
+    margin-bottom: 17px;
     font-size: 17px;
     background-color: none;
     border-top: none;
@@ -77,5 +78,109 @@ body {
 .C_L-Links {
     width: 100%;
     height: 25%;
-    background-color: yellow;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.C_L-Links a {
+    color: #015a83;
+    font-size: 12px;
+    font-weight: 600;
+}
+.C_L-L-Button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90px;
+    height: 40px;
+    border-radius: 15px;
+    background-color: #61a5d0;
+}
+.C_L-L-Button button {
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 19px;
+    font-weight: 800;
+}
+/* LOGIN */
+
+/* HOME */
+.home-header{
+    color: #015a83;
+    height: 50px;
+}
+
+.container-acesso_rapido{
+    background: #fff;
+
+    width: 100%;
+    padding: 20px;
+    border-radius: 15px;
+}
+.C-A_R-Header{
+    width: 100%;
+    height: 30px;
+    color: #015a83;
+}
+.A_R-Blocos{
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    height: 50%;
+}
+.item {
+    max-width:450px;
+}
+.bloco-title{
+    align-items: center;
+    background-color: #015a83; 
+    color: #fff;
+    display: flex;
+    font-weight: 650;
+    height: 30px;
+    padding: 0 10px;
+    width: 100%;
+}
+.item ul {
+    height: 70%;
+    padding: 10px;
+    background-color: #fdfdfd;
+}
+
+.item li {
+    color: #015a83;
+    height: 25px;
+}
+
+.icons{
+    height: 20px;
+    margin-right: 5px;
+}
+.card-inicio{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #015a83;
+    width: 90px;
+    height: 30px;
+    padding: 8px;
+    margin-bottom: 20px;
+    color: #fff;
+}
+.card-inicio img {
+    height: 20px;
+}
+/* HOME */
+
+
+@media (max-width:1290px){
+    .A_R-Blocos {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width:1050px) {
+    .A_R-Blocos {
+        grid-template-columns: repeat(1,1fr);
+    }
 }
