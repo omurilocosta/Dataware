@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=League+Spartan:wght@100..900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'League Spartan', sans-serif;
+}
+
+body {
+    background: url('img/back.png') #e7f6ff;
+    width: 100vw;
+    height: 100vh;
+    padding: 100px;
+}
+
+.content {
+    width: 100%;
+    height: 100%;  
+    
+}
+
+.header-page-login{
+    width: 24%;
+    height: 68px;
+    border-bottom: 3px solid white;
+}
+
+.header-page-login h2 {
+    color: white;
+    font-size: 50px;
+    letter-spacing: -2px;
+}
+
+.content {
+    display: flex;
+    justify-content: end;
+    padding: 25px;
+}
+
+.content .container-login {
+    width: 400px;
+    height: 500px;
+    border: 2px solid #015a83;
+    border-radius: 15px;
+    background-color: #fff;
+    padding: 20px 50px
+}
+
+.C_L-Header {
+    width: 100%;
+    height: 20%;
+    font-size: 34px;
+    background-color: aqua;
+    text-align: center;
+}
+.C_L-Inputs {
+    width: 100%;
+    height: 55%;
+    background-color: yellowgreen;
+}
+.C_L-Inputs label {
+    font-size: 25px;
+}
+.C_L-Inputs input {
+    width: 100%;
+    height: 50px;
+    margin-bottom: 25px;
+    font-size: 17px;
+    background-color: none;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 3px solid #015a83;
+    outline: none;
+}
+.C_L-Links {
+    width: 100%;
+    height: 25%;
+    background-color: yellow;
+}
