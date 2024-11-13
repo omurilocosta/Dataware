@@ -8,12 +8,24 @@
     list-style: none;
 }
 
+:root {
+    --orbe-spacing-0: 0px;
+    --orbe-spacing-1: 4px;
+    --orbe-spacing-2: 8px;
+    --orbe-spacing-3: 12px;
+    --orbe-spacing-6: 24px;
+
+    --orbe-rounded: 8px;
+    --orbe-rounded-full: 9999px;
+
+    --orbe-shadow-sm: 0 2px 4px 0 rgba(73, 87, 105, .16), 0 1px 2px -1px rgba(73, 87, 105, .16);
+}
+
 body {
     background: #e7f6ff;
     width: 100vw;
     height: 100vh;
-    padding: 15px;
-}
+}  
 
 /* LOGIN */
 .pg-login {
@@ -171,6 +183,101 @@ body {
     height: 20px;
 }
 /* HOME */
+
+
+/* HM2 */
+.Navbar {
+    position: fixed;
+    height: 48px;
+    width: 100%;
+    max-width: 1920px;
+    z-index: 99;
+    background: #fff;
+    border-radius: 0 0 25px 25px;
+    box-shadow: var(--orbe-shadow-sm);
+}
+.u-flex{
+    display: flex !important;
+}
+.u-justify-center{
+    justify-content: center !important;
+}
+.u-justify-between{
+    justify-content: space-between !important;
+}
+.u-justify-left{
+    justify-content: left !important;
+}
+.u-items-center{
+    align-items: center !important;
+}
+.u-flex-row {
+    flex-direction: row !important;
+}
+.u-ml-6{
+    margin-left: var(--orbe-spacing-6) !important;
+}
+.u-gap-2{
+    gap: var(--orbe-spacing-2);
+}
+.u-h-full{
+    height: 100% !important;
+}
+.u-flex-grow {
+    flex-grow: 1 !important;
+}
+.NavItem {
+    position: relative;
+    display: inline-flex;
+    flex-direction: row;
+    align-items: center;
+    height: min-content;
+    padding: var(--orbe-spacing-2) var(--orbe-spacing-3);
+    gap: var(--orbe-spacing-1);
+    border-radius: var(--orbe-rounded);
+    color: #1F2A3B;
+    background-color: #fff;
+}
+.NavItem:hover {
+	color: #015a83;
+	background-color: #8eb7c9;
+	cursor: pointer;
+}
+.NavItem::before {
+	position: absolute;
+	top: 36px;
+	left: -8px;
+	content: "";
+	background-color: transparent;
+	width: calc(100% + 16px);
+	height: 6px;
+}
+.NavItem .NavItem-label{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    pointer-events: none;
+}
+.AdvancedInputSearch {
+    padding: var(--orbe-spacing-0) var(--orbe-spacing-1) var(--orbe-spacing-0) var(--orbe-spacing-3);
+    display: inline-flex;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    height: 45px;
+    background-color: #fff;
+    border: solid 1px #CCD5E0;
+    border-radius: var(--orbe-rounded-full);
+    transition: border-color .2s, box-shadow .2s, background-color .2s;
+}
+.AdvancedInputSearch.Menu-search {
+    min-width: 200px;
+    max-width: 400px;
+    height: 32px;
+    border-radius: var(--orbe-rounded);
+    background-color: #F8FAFC;
+    border-color: transparent;
+}
+/* HM2 */
 
 
 @media (max-width:1290px){
