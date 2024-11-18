@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Posição de Estoque - DW</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="shortcut icon" href="../img/DW-icon.png" type="image/x-icon">
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+</head>
+<body>
+    <header class="Header u-flex u-items-center">
+        <div class="logo-header"><a href="home.html"><img src="../img/DW-icon.png" alt=""></a></div>
+        <div class="menuHeader u-flex u-items-center u-justify-center"><box-icon name='menu' size="md"></box-icon>
+            <div class="dropdown">
+                <div class="NavItem">
+                    <div class="NavItem-label">Cadastros</div>
+                    <div class="NavItem-item"><a href="#">Novo produto</a></div>
+                    <div class="NavItem-item"><a href="#">Novo cliente</a></div>
+                    <div class="NavItem-item"><a href="#">Novo fornecedor</a></div>
+                </div>
+                <div class="NavItem">
+                    <div class="NavItem-label">Vendas</div>
+                    <div class="NavItem-item"><a href="#">Faturamento</a></div>
+                    <div class="NavItem-item"><a href="#">Novo orçamento</a></div>
+                    <div class="NavItem-item"><a onclick="abrirModalFC()">Fechamento de caixa</a></div>
+                </div>
+                <div class="NavItem">
+                    <div class="NavItem-label">Estoque</div>
+                    <div class="NavItem-item"><a href="posicaoEstoque.html">Posição de estoque</a></div>
+                </div>
+                <div class="NavItem">
+                    <div class="NavItem-label">Financeiro</div>
+                    <div class="NavItem-item"><a href="#">Nova conta a pagar</a></div>
+                    <div class="NavItem-item"><a href="#">Novo conta a rceber</a></div>
+                    <div class="NavItem-item"><a href="#">Mensalidades</a></div>
+                </div>
+                <div class="NavItem">
+                    <div class="NavItem-label">Fiscal</div>
+                    <div class="NavItem-item"><a href="#">Lançar documento fiscal</a></div>
+                    <div class="NavItem-item"><a href="#">Emitir nota fiscal</a></div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="content-page">
+        <div class="page-title u-flex u-items-center u-mb-7">Estoque > Posição de estoque</div>
+        <div class="search-container u-flex u-mb-5">
+            <div class="logo-search"><box-icon name='search-alt-2' color="#999" ></box-icon></div>
+            <input type="search" placeholder="Busque por nome, código do produto ou referência interna">
+        </div>
+        <div class="stock-area">
+            <div class="stock-area-title">Posição de Estoque</div>
+            <table>
+                <tr>
+                    <th>Código</th>
+                    <th>Produto</th>
+                    <th>Loja/Local</th>
+                    <th>Preço</th>
+                    <th>Quant.</th>
+                    <th>Quant. mínima</th>
+                    <th>Editar</th>
+                </tr>
+                <tr>
+                  <td>8499</td>  
+                  <td>MAXMALLOWS TWIST COLOR 2 MORANGO</td>  
+                  <td>LOJA OBA OBA</td>  
+                  <td>R$ 10,00</td>  
+                  <td>0</td>  
+                  <td>0</td>  
+                  <td><box-icon name='edit-alt' type='solid' ></box-icon></td>  
+                </tr>
+                <tr>
+                  <td>8850</td>  
+                  <td>AMACIANTE DE ROUPAS 500ML AROMAS DO CAMPO</td>  
+                  <td>LOJA OBA OBA</td>  
+                  <td>R$ 10,00</td>  
+                  <td>0</td>  
+                  <td>0</td>  
+                  <td><box-icon name='edit-alt' type='solid' ></box-icon></td>  
+                </tr>
+                <tr>
+                    <td>9079</td>  
+                    <td>BALDE RAE 7,5 LITROS PRETO</td>  
+                    <td>LOJA OBA OBA</td>  
+                    <td>R$ 10,00</td>  
+                    <td>0</td>  
+                    <td>0</td>  
+                    <td><box-icon name='edit-alt' type='solid' ></box-icon></td>  
+                  </tr>
+            </table>
+        </div>
+    </div>
+</body>
+<script async src="../produtos.js"></script>
+<script async src="../script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</html>

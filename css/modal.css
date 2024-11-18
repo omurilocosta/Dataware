@@ -1,0 +1,64 @@
+.janela-modal{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: none;
+    background-color:rgba(255, 255, 255, 0.5);
+    transition: all ease .5s;
+    overflow-y:auto;
+}
+.modal-content{
+    width: 700px;
+    height: 350px;
+    background-color: #fff;
+    box-shadow:0px 0px 15px #999;
+    border-radius: 10px;
+    margin: 20px 0 ;
+}
+.left-modal {
+    width: 40%;
+    border-right: 1px solid #015a83;
+}
+.left-modal label, .right-modal label {
+    font-size: 14px;
+    font-weight: 600;
+    color: #015a83;
+    margin-bottom: var(--orbe-spacing-1);
+}
+.left-modal h3, .right-modal h3{
+    color: #015a83;
+}
+.left-modal select, input{
+    width: 95%;
+    height: 26px;
+    padding: 6px;
+    margin-bottom: var(--orbe-spacing-5);
+    border: 1px solid #999;
+    outline: none;
+    font-size: 15px;
+}
+.left-modal button{
+    width: 95%;
+    height: 26px;
+    background-color: #015a83;
+    border: none;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 500;
+}
+.right-modal {
+    width: 60%;
+}
+.fecharModal{
+    background-color: #015a83;
+    width: 50px;
+    height: 50px;
+    color: #fff ;
+}
+.fecharModal:hover{
+    background-color: #014463;
+    cursor: pointer;
+    transition: all .1s ease-in-out;
+}

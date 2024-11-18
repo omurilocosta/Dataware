@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Inicial - DW</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/modal.css">
+    <link rel="shortcut icon" href="../img/DW-icon.png" type="image/x-icon">
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+</head>
+<body>
+    <header class="Header"><h2>Bem vindo(a) ao Dataware</h2></header>
+    <div class="content-page">
+        <div class="card-inicio">
+            <box-icon name='home' color="white" type='solid'></box-icon>
+            <h3>ínicio</h3>
+        </div>
+        <div class="container-acesso_rapido">
+            <header class="C-A_R-Header"><h3>Acesso rápido</h3></header>
+            <div class="A_R-Blocos">
+                <div class="A_R-B-Cadastros item">
+                    <header class="bloco-title"><box-icon color="white" name='edit'></box-icon>Cadastros</header>
+                    <ul>
+                        <li>Novo produto</li>
+                        <li>Novo cliente</li>
+                        <li>Novo fornecedor</li>
+                    </ul>
+                </div>
+                <div class="A_R-B-Vendas item">
+                    <header class="bloco-title"><box-icon color="white" name='money-withdraw' ></box-icon>Vendas</header>
+                    <ul>
+                        <li>Faturamento</li>
+                        <li>Novo orçamento</li>
+                        <li><a href="#" onclick="abrirModalFC()">Fechamento de caixa</a></li>
+                    </ul>
+                </div>
+                <div class="A_R-B-Estoque item">
+                    <header class="bloco-title"><box-icon color="white" name='package'></box-icon>Estoque</header>
+                    <ul>
+                        <li><a href="posicaoEstoque.html">Posição de Estoque</a></li>
+                    </ul>
+                </div>
+                <div class="A_R-B-Financeiro item">
+                    <header class="bloco-title"><box-icon color="white" name='wallet'></box-icon>Financeiro</header>
+                    <ul>
+                        <li>Nova conta a pagar</li>
+                        <li>Nova conta a receber</li>
+                        <li>Mensalidades</li>
+                    </ul>
+                </div>
+                <div class="A_R-B-Fiscal item">
+                    <header class="bloco-title"><box-icon color="white" name='receipt'></box-icon>Fiscal</header>
+                    <ul>
+                        <li>Lançar documento fiscal</li>
+                        <li>Emitir nota fiscal</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="janela-modal u-justify-center u-items-center u-flex-col">
+            <div class="modal-content u-flex u-p-5">
+                <div class="left-modal u-h-full">
+                    <h3 class="u-mb-3">Selecionar caixa</h3>
+                    <form class="u-flex u-flex-col">
+                        <label for="loja">Loja</label>
+                        <select name="select-loja" id="select-loja">
+                            <option value="oba-oba">Loja OBA OBA</option>
+                        </select>
+                        <label for="operador-caixa">Operador de caixa</label>
+                        <select name="operador" id="operador">
+                            <option value="operador-1">Operador 01</option>
+                            <option value="operador-2">Operador 02</option>
+                            <option value="operador-3">Operador 03</option>
+                        </select>
+                        <label for="data">Data</label>
+                        <input type="date">
+                        <label for="turno">Turno</label>
+                        <select name="turno" id="turno">
+                            <option value="turno-1">1</option>
+                            <option value="turno-2">2</option>
+                            <option value="turno-3">3</option>
+                        </select>
+                    </form>
+                    <button type="button">Buscar caixa</button>
+                </div>
+                <div class="right-modal u-h-full u-ml-6">
+                    <h3 class="u-mb-3">Fechamento de caixa</h3>
+                    <form class="u-flex u-flex-col">
+                        <label for="dinheiro">Dinheiro</label>
+                        <input type="number" name="" id="">
+                        <label for="cartao-debito">Cartão débito</label>
+                        <input type="number" name="" id="">
+                        <label for="cartao-credito">Cartão Crédito</label>
+                        <input type="number" name="" id="">
+                        <label for="pix">Pix</label>
+                        <input type="number" name="" id="">
+                    </form>
+                </div>    
+            </div>
+            <div class="fecharModal u-flex u-items-center u-justify-center u-rounded-full u-mt-7 " onclick="fecharModalFC()">
+                <h2>X</h2>
+            </div>
+        </div>
+    </div>
+</body>
+<script async src="../script.js"></script>
+</html>
