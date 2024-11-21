@@ -37,43 +37,35 @@ body{
 box-icon{
     height: 100%;
 }
-.page-index{
-    background: url(../img/back.png);
-}
-.header-index{
+.header-container{
+    background-color: white;
+    position: fixed;
     width: 100%;
-    height: 50px;
-    margin-top: var(--orbe-spacing-10);
-    padding: 0 100px;
+    height: 64px;
+    z-index: 9999;
+    top: 0;
+    box-shadow: 0 4px 21px rgba(0, 0, 0, .03), 0 9px 12px rgba(0, 0, 0, .01) !important;
 }
-.logo-index{
-    font-size: 35px;
-    font-weight: 800;
-    letter-spacing: -2px;
-    width: 25%;
-    height: 100%;
-    border-bottom: 3px solid #fff;
-    color: white;
+.main_header {
+    width: 100%;
+    position: relative;
+    background: #FFF;
+    padding: 12px 0;
+    z-index: 999;
+    box-shadow: 0 4px 21px rgba(0, 0, 0, .03), 0 9px 12px rgba(0, 0, 0, .01) !important;
 }
-.button-login{
-    background-color: #00aeff;
-    width: 75px;
-    height: 100%;
-    display: flex;
+.flex {
     align-items: center;
-    justify-content: center;
-    border-radius: var(--orbe-rounded);
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
-.button-login a {
-    color: white;
-    font-size: 17px;
-    font-weight: 600;
+.container {
+    width: 100%;
+    max-width: 1600px;
+    padding: 0 100px;
+    margin: 0 auto;
 }
-.button-login:hover{
-    background-color: #015a83;
-    transition: .1s ease;
-}
-.models{display: none;}
 .Header {
     position: fixed;
     background-color: #fff;
@@ -85,8 +77,9 @@ box-icon{
     border-radius: var(--orbe-rounded);
 }
 .content-page {
-    padding: 60px 20px;
+    padding: 66px 20px;
     height: 100%;
+    width: 100%;
 }
 .u-flex{
     display: flex !important;
@@ -378,20 +371,20 @@ button.Button.Button--primary:hover{
     box-shadow: var(--orbe-shadow-sm);
     display:none;
     grid-template-columns: repeat(5, 1fr);
-    padding: 60px 20px;
+    padding:20px;
 }
 .NavItem{
     max-width: 250px;
-    background-color: #F8FAFC;
+    margin: 0 auto ;
 }
 .NavItem-label {
     font-size: 25px;
     font-weight: 600;
     height: 30px;
-    background-color: #00aeff;
     padding: 0 8px;
     display: flex;
     align-items: center;
+    border-bottom: 1px solid #374a67;
 }
 .NavItem-item {
     padding: 10px;
@@ -455,5 +448,21 @@ table tr th{
 @media (max-width:1050px) {
     .A_R-Blocos {
         grid-template-columns: repeat(1,1fr);
+    }
+    .dropdown{
+        width: 100%;
+        box-shadow: var(--orbe-shadow-sm);
+        display:none;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .NavItem{
+        width: 100%;
+        margin: auto 0 ;
+    }
+    .content-page{
+        padding: 66px 10px;
+    }
+    .stock-area{
+        width: 100%;
     }
 }

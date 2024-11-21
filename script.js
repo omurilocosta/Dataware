@@ -7,5 +7,5 @@ const fecharModalFC = () => {
     seleciona('.janela-modal').style.display = 'none'
 }
 const irHome = () => {
-    window.location.href = 'home.html'
+    window.location.href = 'html/home.html'
 }
