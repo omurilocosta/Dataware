@@ -1,0 +1,26 @@
+@import "./_root.css";
+
+* 
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body
+{
+    background-color: var(--dtw-bg-main);
+    overflow: hidden;
+}
+
+#aside
+{
+    height: 100vh;
+    background: linear-gradient(180deg, #1774c5, #0e4aaf);
+}
+
+.icon-user
+{
+    background-color: #0e4aaf;
+    border-radius: 100%;
+}
