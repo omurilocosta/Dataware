@@ -7,7 +7,7 @@
 - Iniciado algumas estilizações de componentes.
 
 ## DT300420261736
-- Concluidos todos os cards de funcionalidade.
+- Concluido todos os cards de funcionalidade.
 - Ajustado estilização de alguns componentes.
 - Criado pasta de imagens para armazenar Icon e Logo do projeto.
 - Adicionado Icon e Logo na página.
