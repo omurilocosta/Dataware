@@ -11,7 +11,7 @@
 
 body
 {
-    background-color: var(--dtw-bg-main);
+    background-color: #f6f9fe;
 }
 
 .sidebar
@@ -28,6 +28,11 @@ body
         margin-bottom: 10px;
         padding: 10px;
     }
+
+    & img
+    {
+        max-width: 175px;
+    }
 }
 
 .sidebar .nav-link.active,
@@ -38,6 +43,7 @@ body
 
 .card-custom
 {
+    min-height: 206px;
     border:none;
     border-radius: 16px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, .05);
@@ -61,3 +67,28 @@ body
 }
 
 .icon-cadastro { background: #dfebf8; color: #4f76bb; }
+.icon-venda { background: #e1f6ea; color: #48ac86; }
+.icon-estoque { background: #e8e3f8; color: #4826b1; }
+.icon-financeiro { background: #fff5dd; color: #fc9f13; }
+.icon-fiscal { background: #dff5fc; color: #4ea8d7; }
+
+.card-link
+{
+    color: #6c757d;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 5px;
+    padding: 6px;
+    text-decoration: none;
+
+    & i
+    {
+        color: #0d6efd;
+    }
+}
+
+.card-link:hover{
+    color: #0d6efd;
+    background: rgba(233, 233, 233, 0.2);
+}
