@@ -12,3 +12,9 @@
 - Criado pasta de imagens para armazenar Icon e Logo do projeto.
 - Adicionado Icon e Logo na página.
 - Adicionado footer de Direitos Autorais.
+
+## DT040520262014
+- Iniciado página de login do sistema.
+- Criado nova imagem para logo do Login.
+- Ajustado algumas estilizações.
+- Criado forms para login.

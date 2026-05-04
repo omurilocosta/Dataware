@@ -7,6 +7,7 @@
     box-sizing: border-box;
     font-family: "Segoe UI", sans-serif;
     list-style: none;
+    text-decoration: none;
 }
 
 body
@@ -28,11 +29,11 @@ body
         margin-bottom: 10px;
         padding: 10px;
     }
+}
 
-    & img
-    {
-        max-width: 175px;
-    }
+.logo-dtw
+{
+    max-width: 175px;
 }
 
 .sidebar .nav-link.active,
@@ -71,6 +72,8 @@ body
 .icon-estoque { background: #e8e3f8; color: #4826b1; }
 .icon-financeiro { background: #fff5dd; color: #fc9f13; }
 .icon-fiscal { background: #dff5fc; color: #4ea8d7; }
+.btn-sign { background: #1774c5; color: #fff; } 
+.btn-sign:hover { background: #0d6efd; color: #fff;}
 
 .card-link
 {
@@ -91,4 +94,12 @@ body
 .card-link:hover{
     color: #0d6efd;
     background: rgba(233, 233, 233, 0.2);
+}
+
+.forgotPass a
+{
+    color: #0d6efd;
+    text-decoration: none;
+    font-size: 14px;
+    margin-top: 10px;
 }
