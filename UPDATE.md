@@ -18,3 +18,12 @@
 - Criado nova imagem para logo do Login.
 - Ajustado algumas estilizações.
 - Criado forms para login.
+
+## DT050520262049
+- Finalizado página de login (revisar).
+- Iniciado página Landing Page do sistema.
+- Feito header e iniciado corpo.
+- Imagem de logo modificada.
+- Adicionado restante da nav no página index.
+- Feito o link entre todas as páginas.
+- Iniciado teste de estilização para uso de arquivo .css único.
